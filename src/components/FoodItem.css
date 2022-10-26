@@ -5,11 +5,15 @@
     margin: 28px;
     border-radius: 15px;
     box-shadow: 2px 1px 3px 3px #dadada;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
 }
 
 .food-rating{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     float: right;
     margin-bottom: 10px;
 }
@@ -23,9 +27,15 @@
     font-size: 13px;
 }
 
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .food-image{
     width: inherit;
-    height: 100px;
+    height: 80px;
     background-size: cover;
 }
 
