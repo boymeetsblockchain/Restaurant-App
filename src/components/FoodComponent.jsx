@@ -17,9 +17,9 @@ const FoodsComponent = () => {
         </div>
         <div className="food-list">
         <FoodItem icon={<AiTwotoneStar />} rate={3.5} image={foodss} amount={2400} name="vegetable and akpu"/>
-        <FoodItem icon={<AiTwotoneStar />} rate={4.8} image={mqdefault} amount={1400} name="mqdefault" />
-        <FoodItem icon={<AiTwotoneStar />} rate={4.1} image={OkraSoup} amount={2000} name="Okro and akpu" />
-        <FoodItem icon={<AiTwotoneStar />} rate={3.9} image={nutrition} amount={4300} name="friut salad" />
+        <FoodItem icon={<AiTwotoneStar />} rate={4.8} image={mqdefault} amount={1400} name=" Vegetable Sauce" />
+        <FoodItem icon={<AiTwotoneStar />} rate={4.1} image={OkraSoup} amount={2000} name="fruit salad" />
+        <FoodItem icon={<AiTwotoneStar />} rate={3.9} image={nutrition} amount={4300} name="okro and akpu" />
             
         </div>
     </main>
