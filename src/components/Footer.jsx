@@ -12,14 +12,14 @@ const Footer = () => {
                 <Link to='/'>
                     <AiFillHome className="icon" />
                 </Link>
-                <Link to='/settings'>
-                    <AiFillSetting className="icon" />
-                </Link>
                 <Link to='/favorite'>
                     <MdFavorite className="icon" />
                 </Link>
                 <Link to='/profile'>
                     <BsFillPersonFill className="icon" />
+                </Link>
+                <Link to='/settings'>
+                    <AiFillSetting className="icon" />
                 </Link>
             </div>
         </div>

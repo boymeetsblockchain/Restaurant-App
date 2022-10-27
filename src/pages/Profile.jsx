@@ -3,9 +3,16 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
 import { useStateContext } from '../context/ContextProvider'
+import {getAuth} from 'firebase/auth'
+import { useState,useEffect } from "react"
 
 const Profile = () => {
     const { sidebar } = useStateContext()
+    const{user,setUser} = useState({});
+    useEffect(()=>{
+     setUser(auth.currentUser)
+    },[])
+     const auth = getAuth();
 
     return (
         <>
@@ -18,10 +25,11 @@ const Profile = () => {
                     ""
                 )}
                 <Header />
-                <h1>This is Profile page</h1>
+                <h1> </h1>
                 <Footer />
             </div>
         </>
+        
     )
 }
 
