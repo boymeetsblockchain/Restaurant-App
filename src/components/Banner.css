@@ -15,7 +15,7 @@ body {
 }
 .banner{
     display: flex;
-    background-color: #80a380;
+    background-color: #00cc66;
     justify-content: space-between;
     margin: 10px;
     margin-top: 40px;
@@ -38,9 +38,11 @@ body {
 
 .banner-items > button{
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     padding: 6px 9px;
     /* margin-top: 12px; */
     border-radius: 7px;
+    cursor: pointer;
 }
 .banner-image{
     height: inherit;
