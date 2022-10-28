@@ -16,6 +16,25 @@
     display: flex;
     align-items: center;
     text-transform: capitalize;
+    margin: 0px 6px;
+}
+
+.cart{
+    position: relative;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.cart > span{
+    font-size: 18px;
+    position: absolute;
+    color: red;
+    padding: 2px;
+    top: -10px;
+    right: -6px;
+    font-weight: bolder;
+    border-radius: 50%;
+
 }
 
 .header-right > h1{
