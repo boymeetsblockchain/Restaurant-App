@@ -4,9 +4,10 @@ import { ReactComponent as PersonOutlineIcon } from "../assets/svg/personOutline
 import "./Header.css"
 import { useStateContext } from "../context/ContextProvider"
 import logo from "../data/logo.png"
+import { BsFillCartPlusFill } from "react-icons/bs";
 
 const Header = () => {
-  const { setSidebar } = useStateContext()
+  const { setSidebar, setOpenCart } = useStateContext()
   const navigate = useNavigate();
 
   const onClick = () => {
@@ -18,7 +19,11 @@ const Header = () => {
         <GiHamburgerMenu onClick={() => setSidebar(true)} style={{ cursor: "pointer" }} />
         <Link to="/"><img src={logo} alt="" className="logo" /></Link>
         <div className="header-right">
-          <PersonOutlineIcon onClick={onClick} style={{ cursor: "pointer" }} />
+          <div className="cart" onClick={() => setOpenCart(true)}>
+          <BsFillCartPlusFill />
+          <span>0</span>
+          </div>
+          <PersonOutlineIcon style={{cursor:"pointer"}} onClick={onClick} />
         </div>
       </div>
     </div>

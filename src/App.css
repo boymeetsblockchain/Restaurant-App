@@ -9,9 +9,3 @@
   display: flex;
 }
 
-.sidebar{
-  position: fixed;
-  width: 300px;
-  height: inherit;
-  background-color: gray;
-}
