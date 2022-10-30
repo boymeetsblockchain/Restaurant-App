@@ -7,8 +7,10 @@ import logo from "../data/logo.png"
 import { BsFillCartPlusFill } from "react-icons/bs";
 
 const Header = () => {
-  const { setSidebar, setOpenCart } = useStateContext()
+  const { setSidebar, setOpenCart, cartItem } = useStateContext()
   const navigate = useNavigate();
+
+  // console.log(cartItem.length)
 
   const onClick = () => {
     navigate('/signup')
@@ -21,7 +23,7 @@ const Header = () => {
         <div className="header-right">
           <div className="cart" onClick={() => setOpenCart(true)}>
           <BsFillCartPlusFill />
-          <span>0</span>
+          <span>{cartItem.length}</span>
           </div>
           <PersonOutlineIcon style={{cursor:"pointer"}} onClick={onClick} />
         </div>
