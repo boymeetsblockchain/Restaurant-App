@@ -8,6 +8,7 @@ import Profile from './pages/Profile';
 import Settings from './pages/Settings';
 import Favorite from './pages/Favorite';
 import PrivateRoute from './components/PrivateRoute';
+import CartComponent from './components/carts/CartComponent';
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
           </Route>
         <Route path='/settings' element={<Settings />} />
         <Route path='/favorite' element={<Favorite />} />
+        <Route path='/cart' element={<CartComponent />} />
       </Routes>
     </>
   );
