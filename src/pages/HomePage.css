@@ -29,8 +29,15 @@ body {
 
 .cart-components{
   position: fixed;
-  width: 100%;
+  right: 0;
+  width: 450px;
   height: inherit;
   background-color: #eeeeee;;
   z-index: 100;
+}
+
+@media only screen and (max-width: 768px){
+  .cart-components{
+  width: 100%;
+}
 }

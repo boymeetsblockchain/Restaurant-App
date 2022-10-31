@@ -17,9 +17,9 @@ body {
     display: flex;
     background-color: #00cc66;
     justify-content: space-between;
-    margin: 10px;
+    margin: 50px;
     margin-top: 40px;
-    padding: 15px;
+    padding: 35px;
     padding-right: 0;
     padding-bottom: 0;
     color: white;
@@ -28,24 +28,81 @@ body {
 
 .banner-items > h2{
     margin: 17px 0;
-    font-size: 20px;
+    font-size: 40px;
+    margin-bottom: 50px;
 }
 
 .banner-items > P{
     margin: 0px 0px 20px 0px;
-    font-size: 16px;
+    font-size: 40px;
+}
+
+.banner-items > button{
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.banner-image{
+    height: inherit;
+    width: 260px;
+    margin-right: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner{
+    margin: 10px;
+}
+
+.banner-items > h2{
+    margin: 17px 0;
+    font-size: 20px;
+}
+
+.banner-items > P{
+  margin-bottom: 17px;
+    font-size: 20px;
 }
 
 .banner-items > button{
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    padding: 6px 9px;
-    /* margin-top: 12px; */
-    border-radius: 7px;
-    cursor: pointer;
+    padding: 8px 11px;
 }
+
 .banner-image{
     height: inherit;
     width: 130px;
-    /* padding-right: 10px; */
+     margin-right: 30px;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .banner{
+    margin: 40px;
+}
+
+.banner-items > h2{
+    margin: 25px 0;
+    font-size: 30px;
+}
+
+.banner-items > P{
+    font-size: 30px;
+}
+
+.banner-items > button{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 14px;
+}
+
+.banner-image{
+    height: inherit;
+    width: 200px;
+}
+
 }

@@ -3,3 +3,44 @@
     height: 100vh;
     overflow-y: scroll;
 }
+
+.cart-icon{
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-icon > div{
+    background-color: wheat;
+    font-size: 130px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 100%;
+}
+
+ .empty-cart{
+    text-align: center;
+ }
+
+ .empty-cart > h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+ }
+
+ .empty-cart > button{
+    width: 100%;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    font-weight: 900;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: rgb(235, 157, 14);
+ }
+ 
+ 

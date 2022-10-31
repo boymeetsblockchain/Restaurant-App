@@ -1,4 +1,4 @@
-import { MdOutlineKeyboardBackspace } from "react-icons/md"
+import { AiOutlineClose } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { useStateContext } from "../../context/ContextProvider";
 import "./cartHeader.css"
@@ -8,8 +8,10 @@ const CartHeader = () => {
 
   return (
     <div className="carts-header">
-          <MdOutlineKeyboardBackspace onClick={() => setOpenCart(false)}/>
-          <h1>Carts</h1>
+      <span><AiOutlineClose onClick={() => setOpenCart(false)} /></span>
+          <div>
+            <h1>Carts</h1>
+          </div>
     </div>
   )
 }
