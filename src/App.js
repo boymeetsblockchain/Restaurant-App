@@ -25,7 +25,7 @@ function App() {
           </Route>
         <Route path='/settings' element={<Settings />} />
         <Route path='/favorite' element={<Favorite />} />
-        <Route path='/cart' element={<CartComponent />} />
+        {/* <Route path='/cart' element={<CartComponent />} /> */}
       </Routes>
     </>
   );
